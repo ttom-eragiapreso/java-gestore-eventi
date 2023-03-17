@@ -72,5 +72,33 @@ public class Main {
                 new BigDecimal(115));
 
         System.out.println(rhcp);
+        Scanner scan = new Scanner(System.in);
+
+        try {
+            System.out.println("Evento creato!");
+            System.out.println("Quanti biglietti vuoi prenotare?");
+            int bigliettiPrenotazione = Integer.parseInt(scan.nextLine());
+
+            for (int i = 0; i < bigliettiPrenotazione; i++) {
+                rhcp.prenota();
+            }
+
+            System.out.println(rhcp.getCapienza() + " Capienza -" + rhcp.getPrenotazioni() +
+                    " - Prenotazioni");
+
+            System.out.println("Quanti biglietti vuoi disdire?");
+            int bigliettiDaDisdire = Integer.parseInt(scan.nextLine());
+
+            for (int i = 0; i < bigliettiDaDisdire; i++) {
+                rhcp.disdici();
+            }
+
+            System.out.println(rhcp.getCapienza() + "Capienza -" + rhcp.getPrenotazioni() +
+                    " - Prenotazioni");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+
     }
 }

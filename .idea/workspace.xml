@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a78974f1-c15c-4f6f-b05f-223c89d3c36d" name="Changes" comment="milestone 2 finita">
-      <change afterPath="$PROJECT_DIR$/src/Concerto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Evento.java" afterDir="false" />
+    <list default="true" id="a78974f1-c15c-4f6f-b05f-223c89d3c36d" name="Changes" comment="milestone 3 finita">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679048536513</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="milestone 3 finita">
+      <created>1679050198381</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679050198381</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -85,6 +89,7 @@
     <MESSAGE value="Finito milestone 1" />
     <MESSAGE value="creazione evento da input utente" />
     <MESSAGE value="milestone 2 finita" />
-    <option name="LAST_COMMIT_MESSAGE" value="milestone 2 finita" />
+    <MESSAGE value="milestone 3 finita" />
+    <option name="LAST_COMMIT_MESSAGE" value="milestone 3 finita" />
   </component>
 </project>
