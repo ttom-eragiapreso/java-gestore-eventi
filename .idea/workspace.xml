@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a78974f1-c15c-4f6f-b05f-223c89d3c36d" name="Changes" comment="secondo e terzo test puliti">
+    <list default="true" id="a78974f1-c15c-4f6f-b05f-223c89d3c36d" name="Changes" comment="messo controllo anche nel setter di set data">
+      <change afterPath="$PROJECT_DIR$/src/ProgrammaEventi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestBonus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Evento.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679051300213</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="messo controllo anche nel setter di set data">
+      <created>1679051585751</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679051585751</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -107,6 +115,7 @@
     <MESSAGE value="milestone 3 finita" />
     <MESSAGE value="milestone 3 finita con test" />
     <MESSAGE value="secondo e terzo test puliti" />
-    <option name="LAST_COMMIT_MESSAGE" value="secondo e terzo test puliti" />
+    <MESSAGE value="messo controllo anche nel setter di set data" />
+    <option name="LAST_COMMIT_MESSAGE" value="messo controllo anche nel setter di set data" />
   </component>
 </project>
