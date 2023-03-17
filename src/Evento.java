@@ -70,7 +70,7 @@ public class Evento {
         return formatData(data) + " - " + titolo;
     }
 
-    private String formatData(LocalDate data){
+    protected String formatData(LocalDate data){
         return data.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
     }
 }
