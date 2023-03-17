@@ -40,13 +40,13 @@ public class ProgrammaEventi {
         String output = "";
         for (Evento e :
                 eventi) {
-            output+= e.getData() + " - " + e.getTitolo() + "\n";
+            output+= e.formatData(e.getData()) + " - " + e.getTitolo() + "\n";
         }
         return output;
     }
 
     public String eventiOrdinati(){
-        return titolo + ordinaEventi();
+        return titolo + "\n" + ordinaEventi();
     }
 
 }
