@@ -28,13 +28,18 @@ public class Main {
 
 
         //Secondo test
-        /*Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
         System.out.println("Inserisci il tuo evento: ");
         System.out.println("Titolo: ");
         String titolo = scan.nextLine();
-        System.out.println("Data: (YYYY-mm-dd)");
-        LocalDate data = LocalDate.parse(scan.nextLine());
+        System.out.println("Anno dell'evento: YYYY");
+        int anno = Integer.parseInt(scan.nextLine());
+        System.out.println("Mese dell'evento: MM");
+        int mese = Integer.parseInt(scan.nextLine());
+        System.out.println("Giorno dell'evento: DD");
+        int giorno = Integer.parseInt(scan.nextLine());
+        LocalDate data = LocalDate.of(anno, mese, giorno);
         System.out.println("Capienza: ");
         int capienza = Integer.parseInt(scan.nextLine());
 
@@ -60,11 +65,11 @@ public class Main {
                 secondoTest.disdici();
             }
 
-            System.out.println(secondoTest.getCapienza() + "Capienza -" + secondoTest.getPrenotazioni() +
+            System.out.println(secondoTest.getCapienza() + " Capienza -" + secondoTest.getPrenotazioni() +
                     " - Prenotazioni");
         } catch (Exception e) {
             System.out.println(e.getMessage());
-        }*/
+        }
 
         //Terzo test
 
@@ -72,12 +77,12 @@ public class Main {
                 new BigDecimal(115));
 
         System.out.println(rhcp);
-        Scanner scan = new Scanner(System.in);
+        Scanner scan2 = new Scanner(System.in);
 
         try {
             System.out.println("Evento creato!");
             System.out.println("Quanti biglietti vuoi prenotare?");
-            int bigliettiPrenotazione = Integer.parseInt(scan.nextLine());
+            int bigliettiPrenotazione = Integer.parseInt(scan2.nextLine());
 
             for (int i = 0; i < bigliettiPrenotazione; i++) {
                 rhcp.prenota();
@@ -87,13 +92,13 @@ public class Main {
                     " - Prenotazioni");
 
             System.out.println("Quanti biglietti vuoi disdire?");
-            int bigliettiDaDisdire = Integer.parseInt(scan.nextLine());
+            int bigliettiDaDisdire = Integer.parseInt(scan2.nextLine());
 
             for (int i = 0; i < bigliettiDaDisdire; i++) {
                 rhcp.disdici();
             }
 
-            System.out.println(rhcp.getCapienza() + "Capienza -" + rhcp.getPrenotazioni() +
+            System.out.println(rhcp.getCapienza() + " Capienza -" + rhcp.getPrenotazioni() +
                     " - Prenotazioni");
         } catch (Exception e) {
             System.out.println(e.getMessage());
