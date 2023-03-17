@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class ProgrammaEventi {
@@ -35,7 +36,7 @@ public class ProgrammaEventi {
     }
 
     public String ordinaEventi(){
-        eventi.sort((Evento e1, Evento e2) -> e1.getData().compareTo(e2.getData()));
+        eventi.sort(Comparator.comparing(Evento::getData));
         String output = "";
         for (Evento e :
                 eventi) {
