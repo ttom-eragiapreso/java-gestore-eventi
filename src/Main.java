@@ -1,8 +1,10 @@
 import java.time.LocalDate;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        try {
+        // Primo test positivo
+       /* try {
             Evento eventoProva = new Evento("RHCP", LocalDate.of(2023, 10, 28), 5);
             System.out.println(eventoProva);
             eventoProva.prenota();
@@ -20,7 +22,25 @@ public class Main {
 
         } catch (Exception e) {
             System.out.println(e.getMessage());;
-        }
+        }*/
 
+
+        //Secondo test
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Inserisci il tuo evento: ");
+        System.out.println("Titolo: ");
+        String titolo = scan.nextLine();
+        System.out.println("Data: (YYYY-mm-dd)");
+        LocalDate data = LocalDate.parse(scan.nextLine());
+        System.out.println("Capienza: ");
+        int capienza = Integer.parseInt(scan.nextLine());
+
+        try {
+            Evento secondoTest = new Evento(titolo, data, capienza);
+            System.out.println(secondoTest);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
