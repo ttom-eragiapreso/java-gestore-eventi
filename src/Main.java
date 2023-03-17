@@ -39,6 +39,22 @@ public class Main {
         try {
             Evento secondoTest = new Evento(titolo, data, capienza);
             System.out.println(secondoTest);
+            System.out.println("Evento creato!");
+            System.out.println("Quanti biglietti vuoi prenotare?");
+            int bigliettiPrenotazione = Integer.parseInt(scan.nextLine());
+            for (int i = 0; i < bigliettiPrenotazione; i++) {
+                secondoTest.prenota();
+            }
+            System.out.println(secondoTest.getCapienza() + " Capienza -" + secondoTest.getPrenotazioni() +
+                    " - Prenotazioni");
+
+            System.out.println("Quanti biglietti vuoi disdire?");
+            int bigliettiDaDisdire = Integer.parseInt(scan.nextLine());
+            for (int i = 0; i < bigliettiDaDisdire; i++) {
+                secondoTest.disdici();
+            }
+            System.out.println(secondoTest.getCapienza() + "Capienza -" + secondoTest.getPrenotazioni() +
+                    " - Prenotazioni");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
