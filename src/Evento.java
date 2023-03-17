@@ -34,6 +34,9 @@ public class Evento {
     }
 
     public void setData(LocalDate data) {
+        if(data.isBefore(LocalDate.now())){
+            throw new DateTimeException("Non puoi modificare la data di un evento ad una data passata");
+        }
         this.data = data;
     }
 
@@ -70,7 +73,7 @@ public class Evento {
         return formatData(data) + " - " + titolo;
     }
 
-    protected String formatData(LocalDate data){
+    protected String formatData (LocalDate data){
         return data.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
     }
 }
