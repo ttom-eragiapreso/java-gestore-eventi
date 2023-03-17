@@ -33,11 +33,14 @@ public class TestBonus {
         programma.aggiungiEvento(concerto4);
         programma.aggiungiEvento(concerto5);
 
-        System.out.println(programma.getTuttiEventi());
-        System.out.println(programma.getEventiStessaData(LocalDate.of(2024, 10, 25)));
+       /* System.out.println(programma.getTuttiEventi());
+        System.out.println(programma.getEventiStessaData(LocalDate.of(2023, 10, 28)));*/
 
-        programma.svoutaLista();
+        //programma.svoutaLista();
+
 
         System.out.println(programma.getTuttiEventi());
+
+        System.out.println(programma.eventiOrdinati());
     }
 }

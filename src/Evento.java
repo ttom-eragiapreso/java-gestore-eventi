@@ -70,7 +70,7 @@ public class Evento {
 
     @Override
     public String toString() {
-        return formatData(data) + " - " + titolo;
+        return formatData(data) + " - " + titolo + "\n";
     }
 
     protected String formatData (LocalDate data){

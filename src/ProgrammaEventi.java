@@ -22,6 +22,10 @@ public class ProgrammaEventi {
         return eventiCoincidenti;
     }
 
+    public List<Evento> getEventi() {
+        return eventi;
+    }
+
     public int getTuttiEventi(){
         return eventi.size();
     }
@@ -30,5 +34,18 @@ public class ProgrammaEventi {
         eventi = new ArrayList<>();
     }
 
+    public String ordinaEventi(){
+        eventi.sort((Evento e1, Evento e2) -> e1.getData().compareTo(e2.getData()));
+        String output = "";
+        for (Evento e :
+                eventi) {
+            output+= e.getData() + " - " + e.getTitolo() + "\n";
+        }
+        return output;
+    }
+
+    public String eventiOrdinati(){
+        return titolo + ordinaEventi();
+    }
 
 }
